@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <title>Random Walker</title>
+</head>
+<body>
+    <div class="con">
+        <h1 id="heading">Random Walk</h1>
+    </div>
+    <canvas id="canvas" width="800" height="600"></canvas>
+    <script src="./index.js"></script>
+</body>
+    <!-- <script>
+        let canvas = document.getElementById("canvas");
+        let ctx = canvas.getContext("2d");
+        const width = canvas.width;
+        const height = canvas.height;
+        let canvasData = ctx.getImageData(0, 0, width, height);
+        const walkArr = [];
+
+        let cord = {
+            x: undefined,
+            y: undefined
+        }
+
+        class Walker {
+            constructor() {
+                this.x = cord.x;
+                this.y = cord.y;
+            }
+        }
+
+        function init() {
+            let j = -1;
+            for (let i = 0; i < 5; i++) {
+                if (i == 0) {
+                    cord.x = width/2;
+                    cord.y = height/2;
+                }
+                if (i > 0) {
+                    j++;
+                    let choice = Math.floor(Math.random() * 4);
+                    let tempX = walkArr[j].x;
+                    let tempY = walkArr[j].y;
+                    if (choice == 0) {
+                        cord.x = tempX + 1;
+                    } if (choice == 1) {
+                        cord.x = tempX - 1;
+                    } if (choice == 2) {
+                        cord.y = tempY + 1;
+                    } if (choice == 3) {
+                        cord.y = tempY - 1;
+                    }
+                }
+                walkArr.push(new Walker());
+            }
+        }
+        init();
+        console.log(walkArr);
+    </script> -->
+</html>
